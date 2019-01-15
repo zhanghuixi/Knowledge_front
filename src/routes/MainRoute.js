@@ -7,14 +7,8 @@ import AsyncComponent from "../components/AsyncComponent";
 const MeasureLib = AsyncComponent(() => {
   return import("./../containers/MeasureLib");
 });
-const NewMeasureLib = AsyncComponent(() => {
-  return import("./../containers/NewMeasureLib");
-});
 const MeasureDetails = AsyncComponent(() => {
   return import("./../containers/MeasureDetails");
-});
-const MeasureRelate = AsyncComponent(() => {
-  return import("./../containers/MeasureRelate");
 });
 const AddMeasure = AsyncComponent(() => {
   return import("./../containers/MeasureLib/AddMeasure");
@@ -36,16 +30,6 @@ const MainRoute = observer(props => {
           path={`${match.path}/measuredetails`}
           exact
           component={MeasureDetails}
-        />
-        <Route
-          path={`${match.path}/newmeasurelib`}
-          exact
-          component={NewMeasureLib}
-        />
-        <Route
-          path={`${match.path}/measurerelate`}
-          exact
-          component={MeasureRelate}
         />
         <Route
           path={`${match.path}/addmeasure`}

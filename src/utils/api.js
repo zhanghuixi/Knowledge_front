@@ -39,7 +39,7 @@ export async function put(path, body, suppressRedBox) {
   if (typeof suppressRedBox == "undefined") {
     suppressRedBox = getConfiguration("SuppressRedBox");
   }
-  return bodyOf(request("put", path, body, suppressRedBox));
+  return bodyOf(request("put", path, body));
 }
 /**
  * http delete 请求

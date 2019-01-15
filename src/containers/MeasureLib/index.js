@@ -125,7 +125,7 @@ const MeasureLib = inject("search", "measurelib")(
       <div>
         <HeaderDiv>
           <HeaderLeft>
-            <span id="red">指标库</span>
+            <span id="red">知识管理</span>
             <PubSub
               input=""
               changeInput={value => {
@@ -136,7 +136,7 @@ const MeasureLib = inject("search", "measurelib")(
             </PubSub>
           </HeaderLeft>
           <HeaderRight className="header-right">
-            <Button
+            {/* <Button
               className="measure-lib-btn-1"
               style={{ marginRight: 20 }}
               onClick={() => {
@@ -144,7 +144,7 @@ const MeasureLib = inject("search", "measurelib")(
               }}
             >
               关联指标库
-            </Button>
+            </Button> */}
             <Button
               type="primary"
               style={{ marginLeft: 10 }}
@@ -156,7 +156,7 @@ const MeasureLib = inject("search", "measurelib")(
                 });
               }}
             >
-              新建指标库
+              新建知识库
             </Button>
           </HeaderRight>
         </HeaderDiv>

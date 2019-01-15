@@ -8,7 +8,7 @@ import RoutingStore from "./models/RoutingStore";
 import { SearchStore } from "./components/SearchForHeader";
 import MeasureLibStore from "./models/domain/MeasureLibStore";
 import DetailsStore from "./models/domain/DetailsStore";
-import MeasureRelateStore from "./models/domain/MeasureRelateStore";
+// import MeasureRelateStore from "./models/domain/MeasureRelateStore";
 import GenericTreeStore from "./models/domain/GenericTreeStore";
 //import RootStore from "./models/RootStore";
 import { setConfiguration } from "./utils/configuration";
@@ -19,7 +19,7 @@ const stores = {
   search: new SearchStore(),
   measurelib: new MeasureLibStore(),
   details: new DetailsStore(),
-  measureRelate: new MeasureRelateStore(),
+  // measureRelate: new MeasureRelateStore(),
   generictree: new GenericTreeStore()
 };
 //const rootStore = new RootStore();
